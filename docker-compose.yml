@@ -31,7 +31,8 @@ services:
             interval: 5s
 
     langgraph-api:
-        image: my-chat-image:latest
+        image: ccs-aiagent:latest
+        container_name: langgraph-api
         ports:
             - "8123:8000"
         depends_on:
@@ -47,3 +48,25 @@ services:
             POSTGRES_URI: postgres://postgres:postgres@langgraph-postgres:5432/postgres?sslmode=disable
         volumes:
             - chroma-db-storage:/app/chroma_db_storage  # Mount ChromaDB persistent storage
+    
+    # fastapi-chat:
+    #     build:
+    #         context: .
+    #         network: host
+    #     container_name: fastapi-chat
+    #     ports:
+    #         - "4000:8000"
+    #     depends_on:
+    #         langgraph-redis:
+    #             condition: service_healthy
+    #         langgraph-postgres:
+    #             condition: service_healthy
+    #         langgraph-api:
+    #             condition: service_healthy
+
+# networks:
+#     chatnet:
+#         driver: bridge
+#         ipam:
+#             config:
+#                 - subnet: 192.168.1.0/24 
