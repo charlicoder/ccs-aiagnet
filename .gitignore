@@ -1,0 +1,12 @@
+.venv
+.langgraph*
+.env
+
+
+
+data
+chroma_db_storage
+
+
+**/*.pyc
+**/__pycache__
