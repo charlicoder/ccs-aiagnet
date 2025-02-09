@@ -1,44 +1,44 @@
-from langgraph_sdk import get_sync_client
-from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from langgraph_sdk import get_sync_client
+from pydantic import BaseModel
 from dotenv import load_dotenv
 import uvicorn
 import os
 
 load_dotenv()
 
-from pydantic import BaseModel
-
 
 class ChatRequest(BaseModel):
     message: str
 
 
-# URL = os.getenv("CHAT_API_URL")
-# print("=========URL========")
-# print(URL)
-
 origins = [
-    "http://127.0.0.1:8000",  # Local frontend
-    "http://localhost:8000",  # Alternative local frontend
+    "http://127.0.0.1:8000",
+    "http://localhost:8000",
     "https://dev.ccsfusion.com",
     "https://app.linkfusions.com",
-    "https://aiagent.linkfusions.com/",
+    "https://aiagent.linkfusions.com",
 ]
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # Allow specific frontend URLs
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 client = get_sync_client(url="http://localhost:8123")
 
 assistant = client.assistants.search(graph_id="agent")[0]
+
+
+@app.options("/{full_path:path}")
+async def preflight_check():
+    return {"message": "CORS preflight OK"}
 
 
 @app.get("/hello")
@@ -64,5 +64,4 @@ async def chat(request: ChatRequest):
 
 
 if __name__ == "__main__":
-
     uvicorn.run(app, host="0.0.0.0", port=8000)
