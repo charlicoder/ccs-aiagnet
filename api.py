@@ -1,4 +1,5 @@
 from langgraph_sdk import get_sync_client
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from dotenv import load_dotenv
 import uvicorn
@@ -13,11 +14,27 @@ class ChatRequest(BaseModel):
     message: str
 
 
-URL = os.getenv("CHAT_API_URL")
-print("=========URL========")
-print(URL)
+# URL = os.getenv("CHAT_API_URL")
+# print("=========URL========")
+# print(URL)
+
+origins = [
+    "http://127.0.0.1:8000",  # Local frontend
+    "http://localhost:8000",  # Alternative local frontend
+    "http://209.74.80.8",  # Your server
+    "https://dev.ccsfusion.com",
+    "https://app.linkfusions.com",
+]
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  # Allow specific frontend URLs
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all HTTP methods
+    allow_headers=["*"],  # Allow all headers
+)
 
 client = get_sync_client(url="http://localhost:8123")
 
