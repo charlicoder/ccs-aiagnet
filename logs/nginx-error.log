@@ -1,1 +1,2 @@
 2025/02/09 15:40:21 [crit] 266425#266425: *1 connect() to unix:/home/aiagent/aiagent/run/gunicorn.sock failed (13: Permission denied) while connecting to upstream, client: 178.152.98.125, server: 209.74.80.8, request: "GET /hello HTTP/1.1", upstream: "http://unix:/home/aiagent/aiagent/run/gunicorn.sock:/hello", host: "209.74.80.8"
+2025/02/09 17:04:04 [crit] 324932#324932: *45 SSL_do_handshake() failed (SSL: error:0A00006C:SSL routines::bad key share) while SSL handshaking, client: 157.230.19.140, server: 0.0.0.0:443
