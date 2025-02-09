@@ -3,10 +3,11 @@
 .env
 
 
-
+logs
 data
 chroma_db_storage
-
+error_log
+access_lo
 
 **/*.pyc
 **/__pycache__
