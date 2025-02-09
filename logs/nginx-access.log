@@ -70,3 +70,4 @@
 157.230.19.140 - - [09/Feb/2025:17:04:14 +0000] "GET /?rest_route=/wp/v2/users/ HTTP/1.1" 404 22 "-" "Go-http-client/1.1"
 205.169.39.191 - - [09/Feb/2025:17:04:21 +0000] "GET / HTTP/1.1" 404 22 "-" "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"
 195.211.77.140 - - [09/Feb/2025:17:04:22 +0000] "HEAD / HTTP/1.1" 404 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
+205.169.39.14 - - [09/Feb/2025:17:06:20 +0000] "GET / HTTP/1.1" 404 22 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36"
