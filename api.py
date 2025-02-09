@@ -21,10 +21,9 @@ class ChatRequest(BaseModel):
 origins = [
     "http://127.0.0.1:8000",  # Local frontend
     "http://localhost:8000",  # Alternative local frontend
-    "http://209.74.80.8",
-    "https://aiagent.linkfusions.com/"  # Your server
     "https://dev.ccsfusion.com",
     "https://app.linkfusions.com",
+    "https://aiagent.linkfusions.com/",
 ]
 
 app = FastAPI()
