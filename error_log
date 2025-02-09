@@ -1,0 +1,739 @@
+[2025-02-09 14:08:59 +0000] [202465] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/aiagent/aiagent/gunicorn.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/aiagent/aiagent
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: /home/aiagent/aiagent/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/aiagent/aiagent/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ffa0d8a5440>
+  on_reload: <function OnReload.on_reload at 0x7ffa0d8a5580>
+  when_ready: <function WhenReady.when_ready at 0x7ffa0d8a56c0>
+  pre_fork: <function Prefork.pre_fork at 0x7ffa0d8a58a0>
+  post_fork: <function Postfork.post_fork at 0x7ffa0d8a59e0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ffa0d8a5b20>
+  worker_int: <function WorkerInt.worker_int at 0x7ffa0d8a5c60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ffa0d8a5da0>
+  pre_exec: <function PreExec.pre_exec at 0x7ffa0d8a5ee0>
+  pre_request: <function PreRequest.pre_request at 0x7ffa0d8a6020>
+  post_request: <function PostRequest.post_request at 0x7ffa0d8a60c0>
+  child_exit: <function ChildExit.child_exit at 0x7ffa0d8a6200>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ffa0d8a6340>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ffa0d8a6480>
+  on_exit: <function OnExit.on_exit at 0x7ffa0d8a65c0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7ffa0d8a67a0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2025-02-09 14:08:59 +0000] [202465] [INFO] Starting gunicorn 23.0.0
+[2025-02-09 14:08:59 +0000] [202465] [DEBUG] Arbiter booted
+[2025-02-09 14:08:59 +0000] [202465] [INFO] Listening at: unix:/home/aiagent/aiagent/gunicorn.sock (202465)
+[2025-02-09 14:08:59 +0000] [202465] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2025-02-09 14:08:59 +0000] [202466] [INFO] Booting worker with pid: 202466
+[2025-02-09 14:08:59 +0000] [202467] [INFO] Booting worker with pid: 202467
+[2025-02-09 14:08:59 +0000] [202468] [INFO] Booting worker with pid: 202468
+[2025-02-09 14:08:59 +0000] [202469] [INFO] Booting worker with pid: 202469
+[2025-02-09 14:09:00 +0000] [202470] [INFO] Booting worker with pid: 202470
+[2025-02-09 14:09:00 +0000] [202465] [DEBUG] 5 workers
+[2025-02-09 14:09:00 +0000] [202468] [INFO] Started server process [202468]
+[2025-02-09 14:09:00 +0000] [202468] [INFO] Waiting for application startup.
+[2025-02-09 14:09:00 +0000] [202468] [INFO] Application startup complete.
+[2025-02-09 14:09:00 +0000] [202467] [INFO] Started server process [202467]
+[2025-02-09 14:09:00 +0000] [202467] [INFO] Waiting for application startup.
+[2025-02-09 14:09:00 +0000] [202467] [INFO] Application startup complete.
+[2025-02-09 14:09:00 +0000] [202466] [INFO] Started server process [202466]
+[2025-02-09 14:09:00 +0000] [202466] [INFO] Waiting for application startup.
+[2025-02-09 14:09:00 +0000] [202466] [INFO] Application startup complete.
+[2025-02-09 14:09:00 +0000] [202470] [INFO] Started server process [202470]
+[2025-02-09 14:09:00 +0000] [202470] [INFO] Waiting for application startup.
+[2025-02-09 14:09:00 +0000] [202470] [INFO] Application startup complete.
+[2025-02-09 14:09:00 +0000] [202469] [INFO] Started server process [202469]
+[2025-02-09 14:09:00 +0000] [202469] [INFO] Waiting for application startup.
+[2025-02-09 14:09:00 +0000] [202469] [INFO] Application startup complete.
+[2025-02-09 14:34:33 +0000] [202465] [INFO] Handling signal: term
+[2025-02-09 14:34:33 +0000] [202470] [INFO] Shutting down
+[2025-02-09 14:34:33 +0000] [202468] [INFO] Shutting down
+[2025-02-09 14:34:33 +0000] [202466] [INFO] Shutting down
+[2025-02-09 14:34:33 +0000] [202468] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:34:33 +0000] [202470] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:34:33 +0000] [202466] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:34:33 +0000] [202469] [INFO] Shutting down
+[2025-02-09 14:34:33 +0000] [202467] [INFO] Shutting down
+[2025-02-09 14:34:33 +0000] [202469] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:34:33 +0000] [202467] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:34:33 +0000] [202470] [INFO] Waiting for application shutdown.
+[2025-02-09 14:34:33 +0000] [202466] [INFO] Waiting for application shutdown.
+[2025-02-09 14:34:33 +0000] [202468] [INFO] Waiting for application shutdown.
+[2025-02-09 14:34:33 +0000] [202470] [INFO] Application shutdown complete.
+[2025-02-09 14:34:33 +0000] [202466] [INFO] Application shutdown complete.
+[2025-02-09 14:34:33 +0000] [202468] [INFO] Application shutdown complete.
+[2025-02-09 14:34:33 +0000] [202470] [INFO] Finished server process [202470]
+[2025-02-09 14:34:33 +0000] [202466] [INFO] Finished server process [202466]
+[2025-02-09 14:34:33 +0000] [202468] [INFO] Finished server process [202468]
+[2025-02-09 14:34:33 +0000] [202469] [INFO] Waiting for application shutdown.
+[2025-02-09 14:34:33 +0000] [202469] [INFO] Application shutdown complete.
+[2025-02-09 14:34:33 +0000] [202469] [INFO] Finished server process [202469]
+[2025-02-09 14:34:33 +0000] [202467] [INFO] Waiting for application shutdown.
+[2025-02-09 14:34:33 +0000] [202467] [INFO] Application shutdown complete.
+[2025-02-09 14:34:33 +0000] [202467] [INFO] Finished server process [202467]
+[2025-02-09 14:34:33 +0000] [202465] [ERROR] Worker (pid:202468) was sent SIGTERM!
+[2025-02-09 14:34:33 +0000] [202465] [ERROR] Worker (pid:202467) was sent SIGTERM!
+[2025-02-09 14:34:33 +0000] [202465] [ERROR] Worker (pid:202470) was sent SIGTERM!
+[2025-02-09 14:34:33 +0000] [202465] [ERROR] Worker (pid:202469) was sent SIGTERM!
+[2025-02-09 14:34:33 +0000] [202465] [ERROR] Worker (pid:202466) was sent SIGTERM!
+[2025-02-09 14:34:33 +0000] [202465] [INFO] Shutting down: Master
+[2025-02-09 14:34:33 +0000] [220948] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/aiagent/aiagent/gunicorn.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/aiagent/aiagent
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: /home/aiagent/aiagent/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/aiagent/aiagent/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f4ca70a1440>
+  on_reload: <function OnReload.on_reload at 0x7f4ca70a1580>
+  when_ready: <function WhenReady.when_ready at 0x7f4ca70a16c0>
+  pre_fork: <function Prefork.pre_fork at 0x7f4ca70a18a0>
+  post_fork: <function Postfork.post_fork at 0x7f4ca70a19e0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f4ca70a1b20>
+  worker_int: <function WorkerInt.worker_int at 0x7f4ca70a1c60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f4ca70a1da0>
+  pre_exec: <function PreExec.pre_exec at 0x7f4ca70a1ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f4ca70a2020>
+  post_request: <function PostRequest.post_request at 0x7f4ca70a20c0>
+  child_exit: <function ChildExit.child_exit at 0x7f4ca70a2200>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f4ca70a2340>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f4ca70a2480>
+  on_exit: <function OnExit.on_exit at 0x7f4ca70a25c0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f4ca70a27a0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2025-02-09 14:34:33 +0000] [220948] [INFO] Starting gunicorn 23.0.0
+[2025-02-09 14:34:33 +0000] [220948] [DEBUG] Arbiter booted
+[2025-02-09 14:34:33 +0000] [220948] [INFO] Listening at: unix:/home/aiagent/aiagent/gunicorn.sock (220948)
+[2025-02-09 14:34:33 +0000] [220948] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2025-02-09 14:34:33 +0000] [220950] [INFO] Booting worker with pid: 220950
+[2025-02-09 14:34:33 +0000] [220951] [INFO] Booting worker with pid: 220951
+[2025-02-09 14:34:33 +0000] [220952] [INFO] Booting worker with pid: 220952
+[2025-02-09 14:34:33 +0000] [220953] [INFO] Booting worker with pid: 220953
+[2025-02-09 14:34:34 +0000] [220954] [INFO] Booting worker with pid: 220954
+[2025-02-09 14:34:34 +0000] [220948] [DEBUG] 5 workers
+[2025-02-09 14:34:34 +0000] [220952] [INFO] Started server process [220952]
+[2025-02-09 14:34:34 +0000] [220952] [INFO] Waiting for application startup.
+[2025-02-09 14:34:34 +0000] [220952] [INFO] Application startup complete.
+[2025-02-09 14:34:34 +0000] [220951] [INFO] Started server process [220951]
+[2025-02-09 14:34:34 +0000] [220951] [INFO] Waiting for application startup.
+[2025-02-09 14:34:34 +0000] [220951] [INFO] Application startup complete.
+[2025-02-09 14:34:34 +0000] [220950] [INFO] Started server process [220950]
+[2025-02-09 14:34:34 +0000] [220950] [INFO] Waiting for application startup.
+[2025-02-09 14:34:34 +0000] [220950] [INFO] Application startup complete.
+[2025-02-09 14:34:34 +0000] [220953] [INFO] Started server process [220953]
+[2025-02-09 14:34:34 +0000] [220953] [INFO] Waiting for application startup.
+[2025-02-09 14:34:34 +0000] [220953] [INFO] Application startup complete.
+[2025-02-09 14:34:34 +0000] [220954] [INFO] Started server process [220954]
+[2025-02-09 14:34:34 +0000] [220954] [INFO] Waiting for application startup.
+[2025-02-09 14:34:34 +0000] [220954] [INFO] Application startup complete.
+[2025-02-09 14:44:16 +0000] [220948] [INFO] Handling signal: term
+[2025-02-09 14:44:16 +0000] [220953] [INFO] Shutting down
+[2025-02-09 14:44:16 +0000] [220953] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:44:16 +0000] [220952] [INFO] Shutting down
+[2025-02-09 14:44:16 +0000] [220952] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:44:16 +0000] [220954] [INFO] Shutting down
+[2025-02-09 14:44:16 +0000] [220950] [INFO] Shutting down
+[2025-02-09 14:44:16 +0000] [220954] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:44:16 +0000] [220950] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:44:16 +0000] [220951] [INFO] Shutting down
+[2025-02-09 14:44:16 +0000] [220951] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:44:16 +0000] [220953] [INFO] Waiting for application shutdown.
+[2025-02-09 14:44:16 +0000] [220953] [INFO] Application shutdown complete.
+[2025-02-09 14:44:16 +0000] [220953] [INFO] Finished server process [220953]
+[2025-02-09 14:44:16 +0000] [220952] [INFO] Waiting for application shutdown.
+[2025-02-09 14:44:16 +0000] [220952] [INFO] Application shutdown complete.
+[2025-02-09 14:44:16 +0000] [220952] [INFO] Finished server process [220952]
+[2025-02-09 14:44:16 +0000] [220950] [INFO] Waiting for application shutdown.
+[2025-02-09 14:44:16 +0000] [220950] [INFO] Application shutdown complete.
+[2025-02-09 14:44:16 +0000] [220950] [INFO] Finished server process [220950]
+[2025-02-09 14:44:16 +0000] [220951] [INFO] Waiting for application shutdown.
+[2025-02-09 14:44:16 +0000] [220951] [INFO] Application shutdown complete.
+[2025-02-09 14:44:16 +0000] [220951] [INFO] Finished server process [220951]
+[2025-02-09 14:44:16 +0000] [220954] [INFO] Waiting for application shutdown.
+[2025-02-09 14:44:16 +0000] [220948] [ERROR] Worker (pid:220953) was sent SIGTERM!
+[2025-02-09 14:44:16 +0000] [220954] [INFO] Application shutdown complete.
+[2025-02-09 14:44:16 +0000] [220954] [INFO] Finished server process [220954]
+[2025-02-09 14:44:16 +0000] [220948] [ERROR] Worker (pid:220950) was sent SIGTERM!
+[2025-02-09 14:44:16 +0000] [220948] [ERROR] Worker (pid:220952) was sent SIGTERM!
+[2025-02-09 14:44:16 +0000] [220948] [ERROR] Worker (pid:220954) was sent SIGTERM!
+[2025-02-09 14:44:16 +0000] [220948] [ERROR] Worker (pid:220951) was sent SIGTERM!
+[2025-02-09 14:44:16 +0000] [220948] [INFO] Shutting down: Master
+[2025-02-09 14:44:16 +0000] [227609] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/aiagent/aiagent/gunicorn.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/aiagent/aiagent
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: /home/aiagent/aiagent/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/aiagent/aiagent/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f34ae8fd440>
+  on_reload: <function OnReload.on_reload at 0x7f34ae8fd580>
+  when_ready: <function WhenReady.when_ready at 0x7f34ae8fd6c0>
+  pre_fork: <function Prefork.pre_fork at 0x7f34ae8fd8a0>
+  post_fork: <function Postfork.post_fork at 0x7f34ae8fd9e0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f34ae8fdb20>
+  worker_int: <function WorkerInt.worker_int at 0x7f34ae8fdc60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f34ae8fdda0>
+  pre_exec: <function PreExec.pre_exec at 0x7f34ae8fdee0>
+  pre_request: <function PreRequest.pre_request at 0x7f34ae8fe020>
+  post_request: <function PostRequest.post_request at 0x7f34ae8fe0c0>
+  child_exit: <function ChildExit.child_exit at 0x7f34ae8fe200>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f34ae8fe340>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f34ae8fe480>
+  on_exit: <function OnExit.on_exit at 0x7f34ae8fe5c0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f34ae8fe7a0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2025-02-09 14:44:16 +0000] [227609] [INFO] Starting gunicorn 23.0.0
+[2025-02-09 14:44:16 +0000] [227609] [DEBUG] Arbiter booted
+[2025-02-09 14:44:16 +0000] [227609] [INFO] Listening at: unix:/home/aiagent/aiagent/gunicorn.sock (227609)
+[2025-02-09 14:44:16 +0000] [227609] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2025-02-09 14:44:16 +0000] [227611] [INFO] Booting worker with pid: 227611
+[2025-02-09 14:44:16 +0000] [227612] [INFO] Booting worker with pid: 227612
+[2025-02-09 14:44:16 +0000] [227613] [INFO] Booting worker with pid: 227613
+[2025-02-09 14:44:16 +0000] [227614] [INFO] Booting worker with pid: 227614
+[2025-02-09 14:44:16 +0000] [227615] [INFO] Booting worker with pid: 227615
+[2025-02-09 14:44:16 +0000] [227609] [DEBUG] 5 workers
+[2025-02-09 14:44:17 +0000] [227612] [INFO] Started server process [227612]
+[2025-02-09 14:44:17 +0000] [227612] [INFO] Waiting for application startup.
+[2025-02-09 14:44:17 +0000] [227612] [INFO] Application startup complete.
+[2025-02-09 14:44:17 +0000] [227613] [INFO] Started server process [227613]
+[2025-02-09 14:44:17 +0000] [227613] [INFO] Waiting for application startup.
+[2025-02-09 14:44:17 +0000] [227613] [INFO] Application startup complete.
+[2025-02-09 14:44:17 +0000] [227614] [INFO] Started server process [227614]
+[2025-02-09 14:44:17 +0000] [227614] [INFO] Waiting for application startup.
+[2025-02-09 14:44:17 +0000] [227614] [INFO] Application startup complete.
+[2025-02-09 14:44:17 +0000] [227611] [INFO] Started server process [227611]
+[2025-02-09 14:44:17 +0000] [227611] [INFO] Waiting for application startup.
+[2025-02-09 14:44:17 +0000] [227611] [INFO] Application startup complete.
+[2025-02-09 14:44:17 +0000] [227615] [INFO] Started server process [227615]
+[2025-02-09 14:44:17 +0000] [227615] [INFO] Waiting for application startup.
+[2025-02-09 14:44:17 +0000] [227615] [INFO] Application startup complete.
+[2025-02-09 14:49:35 +0000] [227609] [INFO] Handling signal: term
+[2025-02-09 14:49:35 +0000] [227612] [INFO] Shutting down
+[2025-02-09 14:49:35 +0000] [227612] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:49:35 +0000] [227611] [INFO] Shutting down
+[2025-02-09 14:49:35 +0000] [227611] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:49:35 +0000] [227613] [INFO] Shutting down
+[2025-02-09 14:49:35 +0000] [227613] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:49:35 +0000] [227615] [INFO] Shutting down
+[2025-02-09 14:49:35 +0000] [227615] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:49:35 +0000] [227614] [INFO] Shutting down
+[2025-02-09 14:49:35 +0000] [227614] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 14:49:35 +0000] [227612] [INFO] Waiting for application shutdown.
+[2025-02-09 14:49:35 +0000] [227612] [INFO] Application shutdown complete.
+[2025-02-09 14:49:35 +0000] [227612] [INFO] Finished server process [227612]
+[2025-02-09 14:49:35 +0000] [227611] [INFO] Waiting for application shutdown.
+[2025-02-09 14:49:35 +0000] [227611] [INFO] Application shutdown complete.
+[2025-02-09 14:49:35 +0000] [227611] [INFO] Finished server process [227611]
+[2025-02-09 14:49:35 +0000] [227615] [INFO] Waiting for application shutdown.
+[2025-02-09 14:49:35 +0000] [227615] [INFO] Application shutdown complete.
+[2025-02-09 14:49:35 +0000] [227615] [INFO] Finished server process [227615]
+[2025-02-09 14:49:35 +0000] [227614] [INFO] Waiting for application shutdown.
+[2025-02-09 14:49:35 +0000] [227614] [INFO] Application shutdown complete.
+[2025-02-09 14:49:35 +0000] [227614] [INFO] Finished server process [227614]
+[2025-02-09 14:49:35 +0000] [227613] [INFO] Waiting for application shutdown.
+[2025-02-09 14:49:35 +0000] [227613] [INFO] Application shutdown complete.
+[2025-02-09 14:49:35 +0000] [227613] [INFO] Finished server process [227613]
+[2025-02-09 14:49:35 +0000] [231242] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/aiagent/aiagent/gunicorn.sock']
+  backlog: 2048
+  workers: 5
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/aiagent/aiagent
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: /home/aiagent/aiagent/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/aiagent/aiagent/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f79e7641440>
+  on_reload: <function OnReload.on_reload at 0x7f79e7641580>
+  when_ready: <function WhenReady.when_ready at 0x7f79e76416c0>
+  pre_fork: <function Prefork.pre_fork at 0x7f79e76418a0>
+  post_fork: <function Postfork.post_fork at 0x7f79e76419e0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f79e7641b20>
+  worker_int: <function WorkerInt.worker_int at 0x7f79e7641c60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f79e7641da0>
+  pre_exec: <function PreExec.pre_exec at 0x7f79e7641ee0>
+  pre_request: <function PreRequest.pre_request at 0x7f79e7642020>
+  post_request: <function PostRequest.post_request at 0x7f79e76420c0>
+  child_exit: <function ChildExit.child_exit at 0x7f79e7642200>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f79e7642340>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f79e7642480>
+  on_exit: <function OnExit.on_exit at 0x7f79e76425c0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7f79e76427a0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2025-02-09 14:49:35 +0000] [231242] [INFO] Starting gunicorn 23.0.0
+[2025-02-09 14:49:35 +0000] [231242] [DEBUG] Arbiter booted
+[2025-02-09 14:49:35 +0000] [231242] [INFO] Listening at: unix:/home/aiagent/aiagent/gunicorn.sock (231242)
+[2025-02-09 14:49:35 +0000] [231242] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2025-02-09 14:49:35 +0000] [231244] [INFO] Booting worker with pid: 231244
+[2025-02-09 14:49:35 +0000] [231245] [INFO] Booting worker with pid: 231245
+[2025-02-09 14:49:35 +0000] [231246] [INFO] Booting worker with pid: 231246
+[2025-02-09 14:49:35 +0000] [231247] [INFO] Booting worker with pid: 231247
+[2025-02-09 14:49:35 +0000] [231242] [DEBUG] 5 workers
+[2025-02-09 14:49:35 +0000] [231248] [INFO] Booting worker with pid: 231248
+[2025-02-09 14:49:36 +0000] [231244] [INFO] Started server process [231244]
+[2025-02-09 14:49:36 +0000] [231244] [INFO] Waiting for application startup.
+[2025-02-09 14:49:36 +0000] [231244] [INFO] Application startup complete.
+[2025-02-09 14:49:36 +0000] [231246] [INFO] Started server process [231246]
+[2025-02-09 14:49:36 +0000] [231246] [INFO] Waiting for application startup.
+[2025-02-09 14:49:36 +0000] [231246] [INFO] Application startup complete.
+[2025-02-09 14:49:36 +0000] [231245] [INFO] Started server process [231245]
+[2025-02-09 14:49:36 +0000] [231245] [INFO] Waiting for application startup.
+[2025-02-09 14:49:36 +0000] [231245] [INFO] Application startup complete.
+[2025-02-09 14:49:36 +0000] [231247] [INFO] Started server process [231247]
+[2025-02-09 14:49:36 +0000] [231247] [INFO] Waiting for application startup.
+[2025-02-09 14:49:36 +0000] [231247] [INFO] Application startup complete.
+[2025-02-09 14:49:36 +0000] [231248] [INFO] Started server process [231248]
+[2025-02-09 14:49:36 +0000] [231248] [INFO] Waiting for application startup.
+[2025-02-09 14:49:36 +0000] [231248] [INFO] Application startup complete.
+[2025-02-09 15:03:51 +0000] [231242] [INFO] Handling signal: term
+[2025-02-09 15:03:51 +0000] [231246] [INFO] Shutting down
+[2025-02-09 15:03:51 +0000] [231245] [INFO] Shutting down
+[2025-02-09 15:03:51 +0000] [231245] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 15:03:51 +0000] [231246] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 15:03:51 +0000] [231244] [INFO] Shutting down
+[2025-02-09 15:03:51 +0000] [231244] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 15:03:51 +0000] [231248] [INFO] Shutting down
+[2025-02-09 15:03:51 +0000] [231248] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 15:03:51 +0000] [231247] [INFO] Shutting down
+[2025-02-09 15:03:51 +0000] [231247] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 15:03:51 +0000] [231245] [INFO] Waiting for application shutdown.
+[2025-02-09 15:03:51 +0000] [231246] [INFO] Waiting for application shutdown.
+[2025-02-09 15:03:51 +0000] [231245] [INFO] Application shutdown complete.
+[2025-02-09 15:03:51 +0000] [231246] [INFO] Application shutdown complete.
+[2025-02-09 15:03:51 +0000] [231245] [INFO] Finished server process [231245]
+[2025-02-09 15:03:51 +0000] [231246] [INFO] Finished server process [231246]
+[2025-02-09 15:03:51 +0000] [231244] [INFO] Waiting for application shutdown.
+[2025-02-09 15:03:51 +0000] [231244] [INFO] Application shutdown complete.
+[2025-02-09 15:03:51 +0000] [231244] [INFO] Finished server process [231244]
+[2025-02-09 15:03:51 +0000] [231242] [ERROR] Worker (pid:231244) was sent SIGTERM!
+[2025-02-09 15:03:51 +0000] [231248] [INFO] Waiting for application shutdown.
+[2025-02-09 15:03:51 +0000] [231248] [INFO] Application shutdown complete.
+[2025-02-09 15:03:51 +0000] [231248] [INFO] Finished server process [231248]
+[2025-02-09 15:03:51 +0000] [231242] [ERROR] Worker (pid:231246) was sent SIGTERM!
+[2025-02-09 15:03:51 +0000] [231242] [ERROR] Worker (pid:231248) was sent SIGTERM!
+[2025-02-09 15:03:51 +0000] [231242] [ERROR] Worker (pid:231245) was sent SIGTERM!
+[2025-02-09 15:03:51 +0000] [231247] [INFO] Waiting for application shutdown.
+[2025-02-09 15:03:51 +0000] [231247] [INFO] Application shutdown complete.
+[2025-02-09 15:03:51 +0000] [231247] [INFO] Finished server process [231247]
+[2025-02-09 15:03:51 +0000] [231242] [ERROR] Worker (pid:231247) was sent SIGTERM!
+[2025-02-09 15:03:51 +0000] [231242] [INFO] Shutting down: Master
+[2025-02-09 15:11:07 +0000] [246104] [DEBUG] Current configuration:
+  config: gunicorn_conf.py
+  wsgi_app: None
+  bind: ['unix:/home/aiagent/aiagent/gunicorn.sock']
+  backlog: 2048
+  workers: 4
+  worker_class: uvicorn.workers.UvicornWorker
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/aiagent/aiagent
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 33
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1', '::1']
+  accesslog: /home/aiagent/aiagent/access_log
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/aiagent/aiagent/error_log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  logconfig_json: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: api:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff333575440>
+  on_reload: <function OnReload.on_reload at 0x7ff333575580>
+  when_ready: <function WhenReady.when_ready at 0x7ff3335756c0>
+  pre_fork: <function Prefork.pre_fork at 0x7ff3335758a0>
+  post_fork: <function Postfork.post_fork at 0x7ff3335759e0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff333575b20>
+  worker_int: <function WorkerInt.worker_int at 0x7ff333575c60>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff333575da0>
+  pre_exec: <function PreExec.pre_exec at 0x7ff333575ee0>
+  pre_request: <function PreRequest.pre_request at 0x7ff333576020>
+  post_request: <function PostRequest.post_request at 0x7ff3335760c0>
+  child_exit: <function ChildExit.child_exit at 0x7ff333576200>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff333576340>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff333576480>
+  on_exit: <function OnExit.on_exit at 0x7ff3335765c0>
+  ssl_context: <function NewSSLContext.ssl_context at 0x7ff3335767a0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1', '::1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  permit_obsolete_folding: False
+  strip_header_spaces: False
+  permit_unconventional_http_method: False
+  permit_unconventional_http_version: False
+  casefold_http_method: False
+  forwarder_headers: ['SCRIPT_NAME', 'PATH_INFO']
+  header_map: drop
+[2025-02-09 15:11:07 +0000] [246104] [INFO] Starting gunicorn 23.0.0
+[2025-02-09 15:11:07 +0000] [246104] [DEBUG] Arbiter booted
+[2025-02-09 15:11:07 +0000] [246104] [INFO] Listening at: unix:/home/aiagent/aiagent/gunicorn.sock (246104)
+[2025-02-09 15:11:07 +0000] [246104] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2025-02-09 15:11:07 +0000] [246105] [INFO] Booting worker with pid: 246105
+[2025-02-09 15:11:08 +0000] [246106] [INFO] Booting worker with pid: 246106
+[2025-02-09 15:11:08 +0000] [246107] [INFO] Booting worker with pid: 246107
+[2025-02-09 15:11:08 +0000] [246108] [INFO] Booting worker with pid: 246108
+[2025-02-09 15:11:08 +0000] [246104] [DEBUG] 4 workers
+[2025-02-09 15:11:08 +0000] [246106] [INFO] Started server process [246106]
+[2025-02-09 15:11:08 +0000] [246106] [INFO] Waiting for application startup.
+[2025-02-09 15:11:08 +0000] [246106] [INFO] Application startup complete.
+[2025-02-09 15:11:08 +0000] [246105] [INFO] Started server process [246105]
+[2025-02-09 15:11:08 +0000] [246105] [INFO] Waiting for application startup.
+[2025-02-09 15:11:08 +0000] [246105] [INFO] Application startup complete.
+[2025-02-09 15:11:08 +0000] [246107] [INFO] Started server process [246107]
+[2025-02-09 15:11:08 +0000] [246107] [INFO] Waiting for application startup.
+[2025-02-09 15:11:08 +0000] [246107] [INFO] Application startup complete.
+[2025-02-09 15:11:08 +0000] [246108] [INFO] Started server process [246108]
+[2025-02-09 15:11:08 +0000] [246108] [INFO] Waiting for application startup.
+[2025-02-09 15:11:08 +0000] [246108] [INFO] Application startup complete.
+[2025-02-09 15:21:24 +0000] [246104] [INFO] Handling signal: term
+[2025-02-09 15:21:24 +0000] [246105] [INFO] Shutting down
+[2025-02-09 15:21:24 +0000] [246105] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 15:21:24 +0000] [246106] [INFO] Shutting down
+[2025-02-09 15:21:24 +0000] [246106] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 15:21:24 +0000] [246108] [INFO] Shutting down
+[2025-02-09 15:21:24 +0000] [246108] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 15:21:24 +0000] [246107] [INFO] Shutting down
+[2025-02-09 15:21:24 +0000] [246107] [INFO] Error while closing socket [Errno 9] Bad file descriptor
+[2025-02-09 15:21:24 +0000] [246105] [INFO] Waiting for application shutdown.
+[2025-02-09 15:21:24 +0000] [246105] [INFO] Application shutdown complete.
+[2025-02-09 15:21:24 +0000] [246105] [INFO] Finished server process [246105]
+[2025-02-09 15:21:24 +0000] [246104] [ERROR] Worker (pid:246105) was sent SIGTERM!
+[2025-02-09 15:21:24 +0000] [246106] [INFO] Waiting for application shutdown.
+[2025-02-09 15:21:24 +0000] [246106] [INFO] Application shutdown complete.
+[2025-02-09 15:21:24 +0000] [246106] [INFO] Finished server process [246106]
+[2025-02-09 15:21:24 +0000] [246108] [INFO] Waiting for application shutdown.
+[2025-02-09 15:21:24 +0000] [246108] [INFO] Application shutdown complete.
+[2025-02-09 15:21:24 +0000] [246108] [INFO] Finished server process [246108]
+[2025-02-09 15:21:24 +0000] [246104] [ERROR] Worker (pid:246108) was sent SIGTERM!
+[2025-02-09 15:21:24 +0000] [246107] [INFO] Waiting for application shutdown.
+[2025-02-09 15:21:24 +0000] [246107] [INFO] Application shutdown complete.
+[2025-02-09 15:21:24 +0000] [246107] [INFO] Finished server process [246107]
+[2025-02-09 15:21:24 +0000] [246104] [ERROR] Worker (pid:246106) was sent SIGTERM!
+[2025-02-09 15:21:24 +0000] [246104] [ERROR] Worker (pid:246107) was sent SIGTERM!
+[2025-02-09 15:21:24 +0000] [246104] [INFO] Shutting down: Master
